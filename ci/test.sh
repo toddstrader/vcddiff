@@ -15,6 +15,7 @@ fi
 ! ./vcddiff examples/counter.vcd examples/counter.change_reorder.no_diff.vcd | grep -q .
 ! ./vcddiff examples/counter.vcd examples/counter.var_reorder.no_diff.vcd | grep -q .
 ! ./vcddiff examples/counter.vcd examples/counter.identifier.no_diff.vcd | grep -q .
+! ./vcddiff examples/counter.vcd examples/counter.scope_move.no_diff.vcd | grep -q .
 if [ "$FIFO_SUPPORTED" = "1" ]; then
   ! ./vcddiff <(cat examples/counter.vcd) <(cat examples/counter.vcd) | grep -q .
 fi
